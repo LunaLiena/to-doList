@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.TaskController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <TextField fx:id="descriptionField" promptText="Description"/>
+    <Spinner fx:id="prioritySpinner"/>
+    <DatePicker fx:id="dueDatePicker"/>
+    <Button text="Add Task" onAction="#addTask"/>
+    <ListView fx:id="taskListView"/>
+    <Button text="Delete Selected Task" onAction="#deleteTask"/>
+</VBox>
